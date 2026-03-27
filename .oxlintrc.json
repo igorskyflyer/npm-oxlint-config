@@ -94,7 +94,7 @@
     "unicorn/prefer-string-slice": "error",
     "unicorn/no-useless-undefined": "error",
     "unicorn/no-nested-ternary": "error",
-    "unicorn/prefer-ternary": "warn",
+    "unicorn/prefer-ternary": "off",
     "unicorn/numeric-separators-style": "error",
     "unicorn/prefer-date-now": "error",
     "unicorn/no-static-only-class": "error",
@@ -108,6 +108,7 @@
     "unicorn/prefer-set-size": "error",
     "unicorn/prefer-set-has": "warn",
     "unicorn/no-await-in-promise-methods": "error",
+    "unicorn/custom-error-definition": "error",
     // OXC
     "oxc/bad-array-method-on-arguments": "error",
     "oxc/bad-comparison-sequence": "error",
@@ -142,6 +143,7 @@
     "vitest/no-conditional-tests": "error",
     "vitest/hoisted-apis-on-top": "warn",
     "vitest/warn-todo": "warn",
-    "vitest/consistent-each-for": "error"
+    "vitest/consistent-each-for": "error",
+    "vitest/prefer-strict-boolean-matchers": "error"
   }
 }
