@@ -113,6 +113,7 @@ Override any rule locally as needed:
 - **`no-new: "warn"`** - using `new` purely for side effects is suspicious
 - **`no-extend-native: "error"`** - extending native prototypes breaks the ecosystem
 - **`no-new-wrappers: "error"`** - `new String()` and friends are never correct
+- **`no-proto: "error"`** - `__proto__` is deprecated, use `Object.getPrototypeOf()` instead
 - **`no-var: "error"`** - `var` is obsolete, use `const` or `let`
 - **`no-eval: "error"`** - `eval` is a security vulnerability
 - **`no-implied-eval: "error"`** - `setTimeout("code")` is `eval` in disguise
@@ -120,7 +121,6 @@ Override any rule locally as needed:
 - **`eqeqeq: "error"`** - always use strict equality
 - **`require-await: "error"`** - async functions without `await` are misleading
 - **`require-yield: "error"`** - generators without `yield` are pointless
-- **`no-proto: "error"`** - `__proto__` is deprecated, use `Object.getPrototypeOf()` instead
 
 **TypeScript:**
 
@@ -185,7 +185,7 @@ Override any rule locally as needed:
 - **`unicorn/prefer-string-slice: "error"`** - `substr`/`substring` are deprecated, use `slice`
 - **`unicorn/no-useless-undefined: "error"`** - explicit `return undefined` is implicit
 - **`unicorn/no-nested-ternary: "error"`** - nested ternaries are unreadable
-- **`unicorn/prefer-ternary: "warn"`** - simple `if/else` that can be a ternary should be
+- **`unicorn/prefer-ternary: "off"`** - prefer using `if/else` for readability
 - **`unicorn/numeric-separators-style: "error"`** - `1000000` should be `1_000_000`
 - **`unicorn/prefer-date-now: "error"`** - `new Date().getTime()` should be `Date.now()`
 - **`unicorn/no-static-only-class: "error"`** - use a plain object instead of a static-only class
@@ -199,6 +199,7 @@ Override any rule locally as needed:
 - **`unicorn/prefer-set-size: "error"`** - use `set.size` instead of `[...set].length`
 - **`unicorn/prefer-set-has: "warn"`** - `Set.has()` is O(1) vs `Array.includes()` O(n)
 - **`unicorn/no-await-in-promise-methods: "error"`** - `Promise.all([await x])` defeats the purpose
+- **`unicorn/custom-error-definition": "error": "error"`** - enforces the only valid way of `Error` subclassing
 
 **OXC:**
 
@@ -240,6 +241,7 @@ Override any rule locally as needed:
 - **`vitest/hoisted-apis-on-top: "warn"`** - `vi.mock()` and similar must be hoisted
 - **`vitest/warn-todo: "warn"`** - todo tests signal unfinished work
 - **`vitest/consistent-each-for: "error"`** - consistent use of `each` for parameterized tests
+- **`vitest/prefer-strict-boolean-matchers: "error"`** - enforce using `toBe(true)` and `toBe(false)` over matchers that coerce types to boolean
 
 <br>
 
