@@ -1,6 +1,6 @@
 {
   "name": "@igorskyflyer/oxlint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "⚓ Strict, no-nonsense oxlint rules that catch real bugs and enforce clean code. 🐳",
   "exports": {
     ".": "./.oxlintrc.json"
