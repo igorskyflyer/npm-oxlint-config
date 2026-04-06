@@ -15,8 +15,8 @@
     "oxlint": "^1.58.0"
   },
   "devDependencies": {
-    "@igorskyflyer/oxfmt-config": "^1.0.0",
-    "oxfmt": "^0.42.0"
+    "@igorskyflyer/oxfmt-config": "^1.1.0",
+    "oxfmt": "^0.43.0"
   },
   "packageManager": "pnpm@10.33.0",
   "private": false,
