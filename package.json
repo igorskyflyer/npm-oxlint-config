@@ -12,7 +12,7 @@
     "pub": "git push origin main --tags"
   },
   "peerDependencies": {
-    "oxlint": "^1.57.0"
+    "oxlint": "^1.58.0"
   },
   "devDependencies": {
     "@igorskyflyer/oxfmt-config": "^1.0.0",
