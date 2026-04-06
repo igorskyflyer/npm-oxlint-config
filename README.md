@@ -43,7 +43,7 @@
 Install it by executing any of the following, depending on the preferred package manager:
 
 ```bash
-bun add -d @igorskyflyer/oxlint-config
+bun add -D @igorskyflyer/oxlint-config
 ```
 
 ```bash
@@ -290,6 +290,10 @@ Licensed under the [**MIT license**](https://github.com/igorskyflyer/npm-oxlint-
 <br>
 
 ## Related
+
+This package is part of the [**dotfiles**](https://github.com/igorskyflyer/dotfiles) DX config suite - a curated index of independently installable configuration packages for linting, formatting, editing, JS/TS, React, Vue and many more.
+
+### Other related packages
 
 [**@igorskyflyer/astro-render-component**](https://www.npmjs.com/package/@igorskyflyer/astro-render-component)
 
